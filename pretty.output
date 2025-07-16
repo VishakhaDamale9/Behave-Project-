@@ -1,0 +1,7 @@
+Feature: To-Do List Management # features/todo.feature:1
+
+  Scenario: Add a task to the to-do list                    # features/todo.feature:2
+    Given I am on the to-do list page                       # steps/todo_steps.py:8
+    When I add a task "Buy groceries"                       # steps/todo_steps.py:22
+    Then the task "Buy groceries" should appear in the list # steps/todo_steps.py:27
+

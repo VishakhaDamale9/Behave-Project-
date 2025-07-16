@@ -1,0 +1,22 @@
+<!-- templates/index.html: Main template for the To-Do List app -->
+<!DOCTYPE html>
+<html>
+<body>
+    <!-- Page title -->
+    <h1>To-Do List</h1>
+    <!-- Form to add a new task -->
+    <form method="post" action="/add">
+        <!-- Input for entering a new task -->
+        <input type="text" name="task" id="task_input">
+        <!-- Button to submit the new task -->
+        <button type="submit" id="add_button">Add Task</button>
+    </form>
+    <!-- Unordered list to display all tasks -->
+    <ul id="task_list">
+        {# Loop through the tasks list and display each task as a list item #}
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

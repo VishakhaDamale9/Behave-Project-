@@ -1,0 +1,12 @@
+<testsuite name="features.todo.To-Do List Management" tests="1" errors="0" failures="0" skipped="0" time="3.457515" timestamp="2025-07-16T15:01:36.536973" hostname="DESKTOP-T5J7SN7"><testcase classname="features.todo.To-Do List Management" name="Add a task to the to-do list" status="passed" time="3.457515"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Add a task to the to-do list
+    Given I am on the to-do list page ... passed in 1.195s
+    When I add a task "Buy groceries" ... passed in 0.127s
+    Then the task "Buy groceries" should appear in the list ... passed in 2.135s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
