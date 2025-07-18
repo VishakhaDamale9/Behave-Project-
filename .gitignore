@@ -1,4 +1,4 @@
-# Ignore Python virtual environments
+# Ignore Python virtual environment
 behave/
 
 reports/

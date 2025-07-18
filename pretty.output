@@ -1,7 +1,11 @@
-Feature: To-Do List Management # features/todo.feature:1
+Feature: Validate To-Do List Web Content # features/todo_validation.feature:1
 
-  Scenario: Add a task to the to-do list                    # features/todo.feature:2
-    Given I am on the to-do list page                       # steps/todo_steps.py:8
-    When I add a task "Buy groceries"                       # steps/todo_steps.py:22
-    Then the task "Buy groceries" should appear in the list # steps/todo_steps.py:27
+  Scenario: Verify the page title              # features/todo_validation.feature:2
+    Given I access the to-do list page         # steps/todo_validation_steps.py:10
+    Then the page title should be "To-Do List" # steps/todo_validation_steps.py:24
+
+  Scenario: Verify a task appears in the list           # features/todo_validation.feature:6
+    Given I access the to-do list page                  # steps/todo_validation_steps.py:10
+    When I add a task "Buy milk"                        # steps/todo_steps.py:28
+    Then the task "Buy milk" should be in the task list # steps/todo_validation_steps.py:31
 
